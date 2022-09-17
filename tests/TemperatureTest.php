@@ -7,3 +7,9 @@ test('can convert celsius to fahrenheit', function () {
 
     expect($fahrenheit)->toEqual(212);
 });
+
+test('can convert fahrenheit to celsius', function () {
+    $celsius = Temperature::fahrenheit(212)->toCelsius();
+
+    expect($celsius)->toEqual(100);
+});
